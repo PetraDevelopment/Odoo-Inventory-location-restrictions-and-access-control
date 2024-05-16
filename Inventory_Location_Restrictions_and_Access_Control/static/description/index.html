@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Low Stock Notification</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: left;
+        }
+        h4 {
+            text-align: left;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .gray-square {
+            width: 800px; 
+            height: 400px; 
+            background-color: 	#E8E8E8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .image-container {
+                flex-direction: column;
+            }
+            .gray-square {
+                width: 90%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Location Restrictions and Access Control Documentation</h1>
+        <div class="message">
+            <h2>1- Set User Right for User</h2>
+            <h4>- If the user has the right for see all locations, then the user sees all locations and its operations and it is also possible that some locations may not be visible to the user.  </h4>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture1.png" alt="Image 1" class="responsive-img" style="width: 100%;">
+        </div>
+        <div class="message">
+            <h2>2-	Define User in Location  </h2>
+            <h4>- Any user can only see the location specified for him, the quantities of the product inside it, and the operations of this store, and the admin has authority over each store and its operations</h4>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture2.png" alt="Image 2" class="responsive-img" style="width: 100%;">
+        </div>
+        <div class="message">
+            <h2>3- Location in User</h2>
+            <h4>- When we define users in location then location store here automatically.</h4>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture3.png" alt="Image 3" class="responsive-img" style="width: 100%;">
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture4.png" alt="Image 3" class="responsive-img" style="width: 100%;">
+        </div>
+        <div class="message">
+            <h2>4- Stock with Restriction</h2>
+            <h4>- When the user has not right for access all locations then it sees its own location product stock </h4>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture5.png" alt="Image 4" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>5- Stock without Restriction for admin</h2>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture6.png" alt="Image 5" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>6- The admin can create any operation type for any store</h2>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture7.png" alt="Image 6" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>7- The users cannot perform any operation type on a store for which he has not specified</h2>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture8.png" alt="Image 7" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>8-The user can make a receipt only at the stores designated for him</h2>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture9.png" alt="Image 8" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>9- Select Allowed Location in Source Location as Well as Destination Location</h2>
+            <h4>- User can select only own location in source location as well as destination location</h4>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture10.png" alt="Image 9" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>10- The admin can make a receipt at any store</h2>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture11.png" alt="Image 10" class="responsive-img" style="width: 100%;">
+        </div><div class="message">
+            <h2>11- The admin can make a transfer from Source Location to Destination Location in any store</h2>
+        </div>
+        <div class="image-container">
+            <img  src="assets/Picture12.png" alt="Image 11" class="responsive-img" style="width: 100%;">
+        </div>
+    </div>
+</body>
+</html>
