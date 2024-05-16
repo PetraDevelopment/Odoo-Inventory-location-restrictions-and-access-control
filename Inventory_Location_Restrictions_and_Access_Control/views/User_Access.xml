@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+        <record id="view_user_Access_locations" model="ir.ui.view">
+            <field name="name">view.user.Access.locations</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[field[@name='companies_count']]" position="after">
+                    <separator string="Others"/>
+                    <group><field name="Access_All_Locations"/></group>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_Access_location_user" model="ir.ui.view">
+            <field name="name">view.Access.location.user</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//page[@name='preferences']//field[@name='action_id']" position="after">
+                    <field name="selected_locations" widget="many2many_tags"/>
+                </xpath>
+            </field>
+        </record>
+        <!-- <record id="record_rule_stock_products" model="ir.rule">
+            <field name="name">Stock Products Record Rule</field>
+            <field name="model_id" ref="model_product_template"/>
+            <field name="domain_force">[('id', 'in', (select pt.id from stock_location sl 
+                join stock_location_path slp on slp.parent_left <= sl.parent_left and slp.parent_right >= sl.parent_right
+                join product_product pp on pp.product_tmpl_id = pt.id
+                join stock_quant sq on sq.location_id = slp.id and sq.product_id = pp.id
+                where sl.usage = 'internal' and sl.name = 'Stock'))]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        </record> -->
+        
+    </data>
+</odoo>
